@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5pc;
+}
+.toSketch{
+    background-color: #FFFFFF;
+    height: 32pc;
+    width: 32pc;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    
+}
+.toSketch > div{ 
+   background-color: red;
+}
+.toSketch > div:hover{
+    background-color: black;
+}
+.select-size{
+    text-align: center;
+}
+
+/* javascript styles */
+.green{
+    background-color: black;
+}
