@@ -12,10 +12,31 @@ outputing.innerHTML = ranging.value
 ranging.addEventListener('change',()=>{
     outputing.innerHTML = ranging.value
     const squared = ranging.value ** 2;
-    console.log(ranging.value);
-    console.log(squared);
+    let auto = ''
+    // console.log(ranging.value);
+    // console.log(squared);
+
+
+    for (let i = 0; i < squared; i++) {
+        sketch.appendChild(div)
+        console.log("am added");
+    }
+    for (let i = 0; i < ranging.value; i++) {
+        sketch.appendChild(div)
+        console.log("am added");
+        auto += "auto "
+    }
+    console.log(auto);
+    sketch.style = `grid-template-columns: ${auto}`
 })
 
+sketchDiv.forEach(div=>{
+    div.addEventListener('click',()=>{
+        console.log("clicked");
+        div.style = 'background-color:black'
+})
+
+})
 
 
 
